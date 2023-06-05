@@ -82,7 +82,7 @@ def generate(file_path):
             new_sentence = modify_sentence(sentence1, pos1)
             new_sentence = new_sentence + ' '
             new_sentence = new_sentence + modify_sentence(sentence2, pos2)
-        prompt = "The words enclosed in brackets in the following content are events, please extract the temporal relationship between the two events\nThe content is: \n" + new_sentence
+        prompt = new_sentence
         d['prompt'] = prompt
         d['answer'] = tlink
         result.append(d)
