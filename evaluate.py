@@ -3,7 +3,7 @@ import json
 if __name__ == '__main__':
     correct_num = 0
     total_num = 0
-    with open(file='./generated_predictions.txt', mode='r', encoding='utf-8') as fp:
+    with open(file='./generated_predictions1.txt', mode='r', encoding='utf-8') as fp:
         for line in fp.readlines():
             total_num += 1
             line = line.strip()
